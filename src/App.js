@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import bulma from "bulma/css/bulma.css";
 import AnimalShow from "./AnimalShow";
+import "./App.css";
 
 function getrandomAnimal() {
   const animals = ["bird", "cat", "cow", "dog", "gator", "horse"];
@@ -29,7 +30,7 @@ function App() {
     <div className="App">
       <h1 className="title has-text-centered">Animal Show List </h1>
     <div className="has-text-centered">  <button type="button " onClick={handleClick} className="button is-primary is-large has-text-centered">Add Animal</button></div>
-    <h1 className="title has-text-centered m-6">{renderedAnimals}</h1>
+    <h1 className="title has-text-centered m-6 animal-list">{renderedAnimals}</h1>
       {/* <h1 className="title has-text-centered"> Number of animals: {count}</h1> */}
       {/* <AnimalShow animal={{ type: "cat" }} /> */}
     </div>
